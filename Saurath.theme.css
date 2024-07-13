@@ -1,0 +1,212 @@
+/**
+ * @name Saurath
+ * @author Serathinite
+ * @version 1.0.0
+ * @description A collection of multiple themes, crafted to how I think Discord should be.
+ * @source https://github.com/rainblosson/Saurath
+ * @website https://github.com/rainblosson/Saurath
+*/
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+@import url(https://MarkChan0225.github.io/RoundedDiscord/src/roundeddiscord.css);
+
+:root {
+  --radius: 12px;
+  --main-font: "Kanit", sans-serif;
+  --main-font-weight: bold;
+}
+
+.theme-light {
+  --background-primary: #ffffff;
+  --background-secondary: #f0f0f0;
+  --background-tertiary: #e0e0e0;
+  --background-accent: #f5f5f5;
+  --background-floating: #fafafa;
+  --background-modifier-hover: #e8e8e8;
+  --background-modifier-selected: #dcdcdc;
+  --background-modifier-active: #cccccc;
+
+  --text-normal: #333333;
+  --text-muted: #999999;
+  --text-link: #0066cc;
+  --text-accent: #444444;
+
+  --scrollbar-thin-thumb: #cccccc;
+  --scrollbar-thin-track: #e0e0e0;
+
+  --button-primary-background: #0077cc;
+  --button-primary-background-hover: #005ea2;
+  --button-primary-background-active: #004d99;
+  --button-secondary-background: #dddddd;
+  --button-secondary-background-hover: #cccccc;
+  --button-secondary-background-active: #bbbbbb;
+
+  --input-background: #f0f0f0;
+  --input-placeholder-text: #666666;
+  --input-text: #333333;
+  --input-border: #cccccc;
+
+  --interactive-normal: #0077cc;
+  --interactive-hover: #005ea2;
+  --interactive-active: #004d99;
+  --interactive-muted: #999999;
+}
+
+.theme-dark {
+  --background-primary: #121212;
+  --background-secondary: #1a1a1a;
+  --background-tertiary: #0d0d0d;
+  --background-accent: #1f1f1f;
+  --background-floating: #1a1a1a;
+  --background-modifier-hover: #262626;
+  --background-modifier-selected: #303030;
+  --background-modifier-active: #383838;
+
+  --text-normal: #c0c0c0;
+  --text-muted: #8e8e8e;
+  --text-link: #b0b0b0;
+  --text-accent: #d0d0d0;
+
+  --scrollbar-thin-thumb: #3d3d3d;
+  --scrollbar-thin-track: #2a2a2a;
+
+  --button-primary-background: #303030;
+  --button-primary-background-hover: #3a3a3a;
+  --button-primary-background-active: #444444;
+  --button-secondary-background: #252525;
+  --button-secondary-background-hover: #2f2f2f;
+  --button-secondary-background-active: #393939;
+
+  --input-background: #1f1f1f;
+  --input-placeholder-text: #666666;
+  --input-text: #bfbfbf;
+  --input-border: #3a3a3a;
+
+  --interactive-normal: #929292;
+  --interactive-hover: #a8a8a8;
+  --interactive-active: #bebebe;
+  --interactive-muted: #727272;
+}
+
+*,
+*::before,
+*::after {
+  font-family: var(--main-font) !important;
+  font-weight: var(--main-font-weight) !important;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+.theme-light .containerDefault_f6f816,
+.theme-light .containerDragBefore_f6f816 {
+  margin: 2px 0;
+  border-radius: var(--radius);
+  border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
+}
+
+.theme-light .containerDefault_f6f816:hover,
+.theme-light .containerDragBefore_f6f816:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeSelected_d8bfb3),
+.theme-light .containerDragBefore_f6f816:has(.modeSelected_d8bfb3) {
+  border-left-color: var(--indicator-selected-border);
+  background-color: var(--indicator-selected-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeSelected_d8bfb3):hover,
+.theme-light .containerDragBefore_f6f816:has(.modeSelected_d8bfb3):hover {
+  background-color: var(--indicator-selected-hover-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeUnreadImportant_d8bfb3),
+.theme-light .containerDragBefore_f6f816:has(.modeUnreadImportant_d8bfb3) {
+  border-left-color: var(--indicator-unread-border);
+  background-color: var(--indicator-unread-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeUnreadImportant_d8bfb3):hover,
+.theme-light .containerDragBefore_f6f816:has(.modeUnreadImportant_d8bfb3):hover {
+  background-color: var(--indicator-unread-hover-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.mentionsBadge_e2a798),
+.theme-light .containerDragBefore_f6f816:has(.mentionsBadge_e2a798) {
+  border-left-color: var(--indicator-unread-mention-border);
+  background-color: var(--indicator-unread-mention-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.mentionsBadge_e2a798):hover,
+.theme-light .containerDragBefore_f6f816:has(.mentionsBadge_e2a798):hover {
+  background-color: var(--indicator-unread-mention-hover-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeConnected_d8bfb3),
+.theme-light .containerDragBefore_f6f816:has(.modeConnected_d8bfb3) {
+  border-left-color: var(--indicator-connected-border);
+  background-color: var(--indicator-connected-background);
+}
+
+.theme-light .containerDefault_f6f816:has(.modeConnected_d8bfb3):hover,
+.theme-light .containerDragBefore_f6f816:has(.modeConnected_d8bfb3):hover {
+  background-color: var(--indicator-connected-hover-background);
+}
+
+.theme-dark .containerDefault_f6f816,
+.theme-dark .containerDragBefore_f6f816 {
+  margin: 2px 0;
+  border-radius: var(--radius);
+  border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
+}
+
+.theme-dark .containerDefault_f6f816:hover,
+.theme-dark .containerDragBefore_f6f816:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeSelected_d8bfb3),
+.theme-dark .containerDragBefore_f6f816:has(.modeSelected_d8bfb3) {
+  border-left-color: var(--indicator-selected-border);
+  background-color: var(--indicator-selected-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeSelected_d8bfb3):hover,
+.theme-dark .containerDragBefore_f6f816:has(.modeSelected_d8bfb3):hover {
+  background-color: var(--indicator-selected-hover-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeUnreadImportant_d8bfb3),
+.theme-dark .containerDragBefore_f6f816:has(.modeUnreadImportant_d8bfb3) {
+  border-left-color: var(--indicator-unread-border);
+  background-color: var(--indicator-unread-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeUnreadImportant_d8bfb3):hover,
+.theme-dark .containerDragBefore_f6f816:has(.modeUnreadImportant_d8bfb3):hover {
+  background-color: var(--indicator-unread-hover-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.mentionsBadge_e2a798),
+.theme-dark .containerDragBefore_f6f816:has(.mentionsBadge_e2a798) {
+  border-left-color: var(--indicator-unread-mention-border);
+  background-color: var(--indicator-unread-mention-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.mentionsBadge_e2a798):hover,
+.theme-dark .containerDragBefore_f6f816:has(.mentionsBadge_e2a798):hover {
+  background-color: var(--indicator-unread-mention-hover-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeConnected_d8bfb3),
+.theme-dark .containerDragBefore_f6f816:has(.modeConnected_d8bfb3) {
+  border-left-color: var(--indicator-connected-border);
+  background-color: var(--indicator-connected-background);
+}
+
+.theme-dark .containerDefault_f6f816:has(.modeConnected_d8bfb3):hover,
+.theme-dark .containerDragBefore_f6f816:has(.modeConnected_d8bfb3):hover {
+  background-color: var(--indicator-connected-hover-background);
+}
